@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add() {
+            let a = document.getElementById("t1").value;
+            let b = document.getElementById("t2").value;
+            a = Number(a);
+            b = Number(b);
+            console.log(a, b);
+            let total = a + b;
+            document.getElementById("addresult").value = total;
+        }
+
+        function sub() {
+            let a = document.getElementById("t1").value;
+            let b = document.getElementById("t2").value;
+            a = Number(a);
+            b = Number(b);
+            console.log(a, b);
+            let total = a - b;
+            document.getElementById("addresult").value = total;
+        }
+
+        function calculate() {
+            let option=document.getElementById("option").value;
+            console.log(option);
+            let a = document.getElementById("t1").value;
+            let b = document.getElementById("t2").value;
+            a = Number(a);
+            b = Number(b);
+            let selectedbutton = "Please select a button";
+            if (document.getElementById("rdadd").checked)
+            selectedbutton = "add";
+            if (document.getElementById("rdsub").checked)
+                selectedbutton = "sub";
+
+            if (document.getElementById("rdmultiply").checked)
+                selectedbutton = "multiply";
+
+            console.log(a, b, selectedbutton);
+            let result = "please select an option";
+            if (selectedbutton == "add")
+                result = a + b;
+            if (selectedbutton == "sub")
+                result = a - b;
+            if (selectedbutton == "multiply")
+                result = a * b;
+            document.getElementById("addresult").value = result;
+            document.getElementById("default").checked=true;
+        }
+    </script>
+</head>
+
+<body>
+    <select id="option">
+<option value="add">Add</option>
+<option value="sub">Sub</option>
+<option value="multiply">Multiply</option>
+
+    </select>
+    <input type="radio" id="default" name="option" style="display: none;">
+    <!-- <label for="rdsub"> sub</label> -->
+    <input type="text" id="t1" />
+    <br>
+    <input type="text" id="t2" />
+    <br>
+    <input type="text" id="addresult" />
+
+    arithmatic:
+    <label> 
+        <input type="radio" name="option"   id="rdadd" value="add">add</label>
+    <!-- <label>
+        <input type="radio" name="option" checked id="rdadd" value="add">add</label> -->
+    <input type="radio" name="option" id="rdsub" value="sub">
+    <label for="rdsub"> sub</label>
+    <label>Multiply<input type="radio" id="rdmultiply" name="option" value="multi">multi</label>
+
+
+    <br>
+    <button type="button" onclick="calculate()">
+        Submit
+    </button>
+    <br>
+    <div id="result"></div>
+
+</body>
+
+</html>

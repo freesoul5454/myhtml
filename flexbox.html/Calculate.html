@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculations</title>
+    <script>
+
+        function f()
+        {
+            let t=document.getElementById("t1");
+            let value=t.value;
+            console.log(value);
+            t.value=value*2;
+            t=document.getElementById("t1")
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="t1"/>
+    <br>
+    <input type="button" onclick="f()" value="Double it">
+    <input type="button"onclick= "f()" value="click here">
+</body>
+</html>

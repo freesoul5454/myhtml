@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculations</title>
+    <script>
+
+        function add() {
+            let a = document.getElementById("t1").value;
+            let b = document.getElementById("t2").value;
+            a = Number(a);
+            b = Number(b);
+            console.log(a, b);
+            let total = a + b;
+            document.getElementById("addresult").value = total;
+            // console.log(a,b);
+            // let value=a+b;
+            // document.getElementById("addresult").value=total;
+        }
+        function substract() {
+            let a = document.getElementById("t1").value;
+            let b = document.getElementById("t2").value;
+            a = Number(a);
+            b = Number(b);
+            console.log(a, b);
+            let total = a - b;
+            document.getElementById("addresult").value = total;  
+        }
+        
+            function multiply() {
+            let a = document.getElementById("t1").value;
+            let b = document.getElementById("t2").value;
+            a = Number(a);
+            b = Number(b);
+            console.log(a, b);
+            let total = a * b;
+            document.getElementById("addresult").value = total;
+            
+        }
+        
+            function divison() {
+            let a = document.getElementById("t1").value;
+            let b = document.getElementById("t2").value;
+            a = Number(a);
+            b = Number(b);
+            console.log(a, b);
+            let total = a / b;
+            document.getElementById("addresult").value = total;
+              
+        }
+        
+            function percentage() {
+            let a = document.getElementById("t1").value;
+            let b = document.getElementById("t2").value;
+            a = Number(a);
+            b = Number(b);
+            console.log(a, b);
+            let total = a % b;
+            document.getElementById("addresult").value = total;
+                   
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="t1"/> 
+    <br>   
+<input type="text" id="t2"/>
+<br>
+<input  type="text" id="addresult"/>
+
+<input type="button" onclick="add()" value="Add">
+
+<input type="button" onclick="substract()" value="sub">
+<input type="button" onclick="multiply()" value="multi">
+<input type="button" onclick="divison()" value="div">
+<input type="button" onclick="percentage()" value="percent">
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Max=10
+        function getmax() {
+            let a, b;
+
+            let max;
+            a = Number(document.getElementById("t1").value);
+            b = Number(document.getElementById("t2").value);
+            if (a > b)
+                max = a;
+            else
+                max = b;
+            console.log("Max = ", max);
+            document.getElementById("result").value = max;
+        }
+        function ftemperature() {
+            let temperature =Number(document.getElementById("temp").value) ;
+            console.log(temperature);
+
+
+
+
+            if (temperature > 30) {
+              
+              document.getElementById("ht").innerHTML="It's a hot day!";
+                console.log("It's a hot day!");
+            } else {
+                console.log("It's not too hot today.");
+                document.getElementById("ht").innerHTML="It's not too hot today.";
+            }
+
+        }
+        // ftemperature();
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="getmax()" value="Find Max">
+    <br>
+    
+<br>
+    A<input type="text" id="t1">
+    <br>
+    B<input type="text" id="t2">
+    <br>
+    Max<input readonly type="text" id="result">
+
+    <br>
+    temperature <input type="number" id="temp">
+    <br>
+    <h1 id="ht"></h1>
+    <input type="button" onclick="ftemperature()" value="Find Temp">
+
+</body>
+
+</html>

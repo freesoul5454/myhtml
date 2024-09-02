@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function getWeekDayName() {
+        // [ 'sunday','monday' ,'tuesday' ,'wednesday' ,'friday','saturday'];
+        let dayno = Number(document.getElementById("t1").value);
+        let day;
+        //    if(dayno==0)
+        //    day="Sun";
+        // else
+        // if(dayno==1)
+        // day="Mon";
+
+        switch (dayno) {
+            case 0:
+                day = "Sun";
+                break;
+
+            case 1:
+                day = "Mon";
+                break;
+
+            case 2:
+                day = "Tue";
+                break;
+
+            case 3:
+                day = "Wed";
+                break;
+
+            case 4:
+                day = "Thu";
+                break;
+
+            case 5:
+                day = "Fri";
+                break;
+
+            case 6:
+                day = "Sat";
+                break;
+            default:
+                day = "Invalid.";
+        }
+        console.log(day);
+        document.getElementById("result").innerHTML = day;
+    }
+
+    function getMonthName() {
+        let monthno = Number(document.getElementById("t1").value);
+        let month;
+        switch (monthno) {
+            case 1:
+
+
+            case 3:
+
+            case 5:
+            case 7:
+
+
+            case 8:
+
+
+            case 10:
+
+            case 12:
+                month = 31;
+                break;
+            default:
+                month = "Invalid";
+                break;
+            case 2:
+                month = "28/29";
+                break;
+
+            case 4:
+
+
+
+            case 6:
+
+
+            case 9:
+
+
+
+            case 11:
+                month = 30;
+                break;
+
+        
+        }
+        console.log(month);
+        document.getElementById("result").innerHTML = month;
+    }
+
+
+</script>
+
+<body>
+    <input type="number" id="t1">
+    <br>
+    <p id="result"></p>
+    <button onclick="getWeekDayName()"> week</button>
+    <br>
+    <button onclick="getMonthName()">month</button>
+</body>
+
+</html>

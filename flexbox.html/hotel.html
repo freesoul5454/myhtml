@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding for the document to support special characters -->
+    <meta charset="utf-8">
+
+    <!-- Viewport settings for responsive web design, ensuring proper scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title of the webpage, which appears on the browser tab -->
+    <title>Abc Hotels</title>
+
+    <!-- Link to Bootstrap CSS from a CDN for styling the webpage -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Internal CSS for additional styling -->
+    <style>
+        /* Apply border styling to all div elements */
+        div {
+            border: 1px;
+            /* Border width (should include units like px for proper rendering) */
+            border-color: lightblue;
+            /* Border color */
+            border-style: solid;
+            /* Border style (solid, dashed, etc.) */
+        }
+
+        .showimage {
+
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Container that spans the full width of the viewport -->
+    <div class="container-fluid">
+        <!-- Row to create a horizontal layout -->
+        <div class="row">
+            <!-- Column taking up 2/12 of the row width on medium screens and larger -->
+            <div class="col-md-2">
+                <!-- Image with a fixed width of 100px -->
+                <img src="../pics/1.jpg" style="width: 100px;">
+            </div>
+            <!-- Column taking up 8/12 of the row width on medium screens and larger -->
+            <div class="col-md-8">
+                <center>
+                    <h1>ABC Hotel</h1>
+                </center>
+            </div>
+            <!--Column taking up 2/12 of the row width on medium screens and larger -->
+            <div class="col-md-2">1</div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-12">
+
+
+                <div id="carouselExampleCaptions" class="carousel slide"  data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../pics/1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../pics/2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../pics/3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>     
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+    <!-- Link to Bootstrap JS from a CDN for interactive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
